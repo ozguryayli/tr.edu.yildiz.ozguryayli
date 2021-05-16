@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="245dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <TextView
+        android:id="@+id/textViewQ"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Question"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxAA"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:text="A)" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBB"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:text="B)" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCC"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:text="C)" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDD"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:text="D)" />
+
+            <CheckBox
+                android:id="@+id/checkBoxEE"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:text="E)" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attachment:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textAt"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewA"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Answer"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewB"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Answer"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewC"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Answer"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Answer"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewE"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Answer"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E1837C"
+                    android:text="Delete" />
+
+                <Button
+                    android:id="@+id/buttonUpdate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#8FE192"
+                    android:onClick="update"
+                    android:text="Update" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/purple_500" />
+</LinearLayout>

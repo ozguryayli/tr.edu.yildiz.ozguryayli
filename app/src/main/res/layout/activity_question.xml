@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <EditText
+        android:id="@+id/Text"
+        android:layout_width="395dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="620dp"
+        android:ems="10"
+        android:hint="Enter the question"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AnswerA"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="67dp"
+        android:ems="10"
+        android:hint="Answer A"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text" />
+
+    <EditText
+        android:id="@+id/AnswerB"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Answer B"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerA" />
+
+    <EditText
+        android:id="@+id/AnswerC"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Answer C"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerB" />
+
+    <EditText
+        android:id="@+id/AnswerD"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Answer D"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerC" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="100dp"
+        android:text="Please select the correct option"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxA"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:text="A)"
+        app:layout_constraintEnd_toStartOf="@+id/AnswerA"
+        app:layout_constraintTop_toBottomOf="@+id/Text" />
+
+    <CheckBox
+        android:id="@+id/checkBoxD"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:text="D)"
+        app:layout_constraintEnd_toStartOf="@+id/AnswerD"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerC" />
+
+    <CheckBox
+        android:id="@+id/checkBoxC"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:text="C)"
+        app:layout_constraintEnd_toStartOf="@+id/AnswerC"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerB" />
+
+    <CheckBox
+        android:id="@+id/checkBoxB"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:text="B)"
+        app:layout_constraintEnd_toStartOf="@+id/AnswerB"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerA" />
+
+    <CheckBox
+        android:id="@+id/checkBoxE"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:text="E)"
+        app:layout_constraintEnd_toStartOf="@+id/AnswerE"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxD" />
+
+    <EditText
+        android:id="@+id/AnswerE"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Answer E"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerD" />
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="addQuestion"
+        android:text="Save Questıon"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="19dp"
+        android:onClick="attach"
+        android:text="attachment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerE" />
+
+    <TextView
+        android:id="@+id/textAttach"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="459dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAttach"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

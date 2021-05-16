@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="175dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="Menu"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_700"
+            android:textIsSelectable="true"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="openQuestion"
+            android:text="Add Questıon"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonlist"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="listQuestion"
+            android:text=" lıst questıons"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonsettings"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="examSettings"
+            android:text="Exam Settıngs"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttoncreate"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="createExam"
+            android:text="Create Exam"
+            android:textStyle="bold" /><![CDATA[
+
+
+
+        />
+
+
+    ]]>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
